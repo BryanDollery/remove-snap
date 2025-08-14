@@ -7,3 +7,10 @@ This simple bash script removes snap from Ubuntu. Why? Because snap is severely 
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/BryanDollery/remove-snap/main/remove-snap.sh)"
 ```
+
+## Important:
+
+If you're running Ubuntu Desktop, do not run this script. It will mess you up.
+
+## Note:
+While this approach worked for a while, Canonical have now woven snap into their desktop so much that removing it messes up some necessary applications, like Firefox, and fixing this is difficult. Ubuntu Desktop no longer includes the official repos for software, preferring instead to use Canonical's own snap repos. You can remove these repos but the official repos don't see to work, so you lose firefox. In conclusion, I cannot recommend Ubuntu Desktop to anyone for any use-case. If you're running Ubuntu Desktop, do not run this script.
